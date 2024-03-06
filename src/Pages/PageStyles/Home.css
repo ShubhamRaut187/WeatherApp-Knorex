@@ -1,14 +1,14 @@
 .home_main{
-    width: 90%;
+    width: 100%;
     margin: 0px auto 0px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid white; */
 }
 .home_div_one{
     width: 50%;
-    height: 700px;
+    height: 600px;
 }
 .home_div_one>img{
     width: 100%;
@@ -16,11 +16,83 @@
 }
 .home_div_two{
     width: 50%;
-    height: 700px;
+    height: 600px;
 }
-.select_city_div{
+.home_head_div{
     width: 100%;
+    /* height: 100px; */
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
+.home_head_div>h1{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+}
+.home_head_div>p{
+    margin: 5px 50px 20px 50px;
+    text-align: center;
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+.select_city_div{
+    width: 90%;
+    border-top: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto 10px auto;
+}
+.select_city_div>h3{
+    /* font-family: "Roboto", sans-serif; */
+    text-align: center;
+    color: white;
+}
+#city_dropdown{
+    width: 30%;
+    height: 35px;
+    background-color: #33495f;
+    border: 1px solid #707070;
+    color: white;
+    font-weight: 700;
+}
+.weather_forecast_main{
+    width: 90%;
+    margin: 20px auto 20px auto;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+}
+
+/* Media */
+/* Small Screens */
+@media screen and (min-width:320px) and (max-width:767px){
+   .home_main{
+    flex-direction: column;
+   }
+   .home_div_one{
+    width: 90%;
+    height: 300px;
+   }
+   .home_div_two{
+    width: 90%;
+    height: 700px;
+   }
+   .weather_forecast_main{
+    width: 90%;
+    /* margin: auto; */
+    grid-template-columns: repeat(1,1fr);
+   }
+  }
+  
+  /* Medium Screens */
+  @media screen and (min-width:768px) and (max-width:1024px){
+    
+  }

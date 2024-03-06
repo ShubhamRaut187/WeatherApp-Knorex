@@ -1,0 +1,16 @@
+.time_card{
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    background-color: #0b131e;
+}
+.time_card_head>h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.time_card_head>p{
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
