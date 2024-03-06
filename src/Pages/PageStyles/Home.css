@@ -94,5 +94,20 @@
   
   /* Medium Screens */
   @media screen and (min-width:768px) and (max-width:1024px){
-    
+    .home_main{
+        flex-direction: column;
+       }
+       .home_div_one{
+        width: 90%;
+        height: 300px;
+       }
+       .home_div_two{
+        width: 90%;
+        height: 700px;
+       }
+       .weather_forecast_main{
+        width: 90%;
+        /* margin: auto; */
+        grid-template-columns: repeat(1,1fr);
+       }
   }
